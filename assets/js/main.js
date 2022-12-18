@@ -11,6 +11,11 @@ $(function () {
       $("#txtPassword").attr("type", type);
   });
 });
+function changeIcon(anchor) {
+  var icon = anchor.querySelector("i");
+  icon.classList.toggle('fa-arrow-alt-circle-left');
+  icon.classList.toggle('fa-arrow-alt-circle-right');
+}
 (function() {
   "use strict";
 
@@ -52,7 +57,11 @@ $(function () {
       select('body').classList.toggle('toggle-sidebar')
     })
   }
-
+  if (select('.toggle-sidebar-btn2')) {
+    on('click', '.toggle-sidebar-btn2', function(e) {
+      select('body').classList.toggle('toggle-sidebar')
+    })
+  }
   /**
    * Search bar toggle
    */
