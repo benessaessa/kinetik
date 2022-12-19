@@ -25,11 +25,11 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">
+        <span>
           <img src="assets/images/logo.png">
         </span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn d-xl-none d-block"></i>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
     <nav class="header-nav ms-auto">
@@ -177,25 +177,29 @@
 
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
-    <div onclick="changeIcon(this)" class="d-none d-xl-block">
+
+    <!-- arrow for side menu -->
+    <!-- <div onclick="changeIcon(this)" class="d-none d-xl-block">
       <i class="fa fa-arrow-alt-circle-left textOrange toggle-sidebar-btn2 absoluteBtn fa-lg" ></i>
-    </div>
-    <ul class="sidebar-nav second-sidebar-nav pt-xl-4" id="sidebar-nav">
+    </div> -->
+
+    <ul class="sidebar-nav second-sidebar-nav pt-md-2" id="sidebar-nav">
+
       <li class="nav-item">
         <a class="nav-link active" href="organization.html">
-          <i class="fa fa-building"></i>
+          <img src="assets/images/organizationActive.svg" class="mb-2" alt="">
           <span>Organization</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">
-          <i class="fa fa-users"></i>
+        <a class="nav-link" href="organization-edit.html">
+          <img src="assets/images/employee.svg" alt="">
           <span>Employees</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about.html">
-          <i class="fa fa-building"></i>
+          <img src="assets/images/team.svg" alt="">
           <span>Teams</span>
         </a>
       </li>
