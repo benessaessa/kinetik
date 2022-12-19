@@ -227,6 +227,16 @@
       <div class="row">
         <div class="col-lg-6">
           <form class="formGeneral" action="#">
+            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+            <div class="d-flex">
+              <label for="file" style="cursor: pointer;">
+                <img id="output" src="assets/images/upload.png" width="90" height="90" />
+              </label>
+              <div class="ps-3 pt-4">
+                <h6 class="font-14 fw-bold">UPLOAD LOGO</h6>
+                <p class="font-12">Maximum Size 20 MG </p>
+              </div>
+            </div>
             <div class="mb-3 mt-3">
               <label for="organization" class="form-label fw-bold textBlack">Organization Name</label>
               <input type="text" required class="form-control height-42" id="organization" placeholder="Ex :Kinetik" name="organization">

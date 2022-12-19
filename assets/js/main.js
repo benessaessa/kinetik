@@ -4,6 +4,10 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
 $(function () {
   $("#toggle_pwd").click(function () {
       $(this).toggleClass("fa-eye fa-eye-slash");
