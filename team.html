@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard</title>
+  <title>Teams</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <link rel="icon" href="assets/images/logo.png">
@@ -25,7 +25,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">
+        <span>
           <img src="assets/images/logo.png">
         </span>
       </a>
@@ -178,23 +178,28 @@
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
+    <!-- arrow for side menu -->
+    <!-- <div onclick="changeIcon(this)" class="d-none d-xl-block">
+      <i class="fa fa-arrow-alt-circle-left textOrange toggle-sidebar-btn2 absoluteBtn fa-lg" ></i>
+    </div> -->
+
     <ul class="sidebar-nav second-sidebar-nav pt-md-2" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link active" href="organization.html">
-          <img src="assets/images/organizationActive.svg" class="mb-2" alt="">
+        <a class="nav-link" href="organization.html">
+          <img src="assets/images/organization.svg" class="mb-2" alt="">
           <span>Organization</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="organization-edit.html">
+        <a class="nav-link" href="employee.html">
           <img src="assets/images/employee.svg" alt="">
           <span>Employees</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="team.html">
-          <img src="assets/images/team.svg" alt="">
+        <a class="nav-link active" href="team.html">
+          <img src="assets/images/teamActive.svg" alt="">
           <span>Teams</span>
         </a>
       </li>
@@ -219,11 +224,169 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Dashboard</h1>
+      <div class="d-md-flex justify-content-between">
+        <div>
+          <h1 class="text-black">Teams</h1>
+          <p class="pt-1 fw-bold textGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <button class="btn btnOrange px-4" data-bs-toggle="modal" data-bs-target="#modalAdd"><img src="assets/images/plus.png" class="me-2" alt=""> New Team</button>
+      </div>
+
+      <!-- Modal Add -->
+      <div class="modal fade" id="modalAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header pb-0 border-0 pt-4 ps-4">
+              <div class="w-100">
+                <h5> New Team <button type="button" class="btn-close float-end display-6" data-bs-dismiss="modal" aria-label="Close"></button></h5>
+                <p class="textGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+            </div>
+            <div class="modal-body pt-0 px-4">
+              <form class="formGeneral" action="team.html">
+                <div class="row pt-3">
+                  <div class="col-lg-6">
+                    <div class="mb-2">
+                      <label for="teamname" class="form-label fw-bold textBlack">Team Name</label>
+                      <input type="text" required class="form-control height-42" id="teamname" placeholder="Ex : John" name="firstname">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-2">
+                      <label for="mission" class="form-label fw-bold textBlack">Team Mission</label>
+                      <input type="text" required class="form-control height-42" id="mission" placeholder="Ex : Doe" name="lastname">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mb-2">
+                      <label for="leader" class="form-label fw-bold textBlack">Leader</label>
+                      <select class="form-select form-control height-42" id="leader" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-2">
+                      <label for="vision" class="form-label fw-bold textBlack">Team Vision</label>
+                      <input type="text" required class="form-control height-42" id="vision" placeholder="Ex : Vision" name="vision">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="mb-2">
+                      <label class="form-label">Type</label>
+                      <div class="d-flex">
+                        <div class="form-check pe-4">
+                          <input class="form-check-input" type="radio" name="radioRole" id="leader" checked>
+                          <label class="form-check-label" for="leader">
+                            Primary
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radioRole" id="employee">
+                          <label class="form-check-label" for="employee">
+                            Secondary
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-2">
+                      <label for="values" class="form-label fw-bold textBlack">Team Values</label>
+                      <input type="text" required class="form-control height-42" id="values" placeholder="Ex : Designer" name="values">
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btnOrange px-5 mt-4">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal Add -->
+    
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
-      
+      <div class="table-responsive tableEmployee border">
+        <table class="table table-light mb-0">
+          <thead>
+            <tr>
+              <th>Team Name</th>
+              <th>Type</th>
+              <th>Leader</th>
+              <th>Members</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>Mohamed Essa</p>
+              </td>
+              <td>
+                <p>Primary</p>
+              </td>
+              <td>
+                <p>Admin</p>
+              </td>
+              <td>
+                <p>0</p>
+              </td>
+              <td>
+                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-user-cog"></i></button>
+                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-pencil-alt"></i></button>
+                <button class="btn p-0 textOrange border-0"><i class="fa fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Mohamed Essa</p>
+              </td>
+              <td>
+                <p>Primary</p>
+              </td>
+              <td>
+                <p>Admin</p>
+              </td>
+              <td>
+                <p>0</p>
+              </td>
+              <td>
+                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-user-cog"></i></button>
+                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-pencil-alt"></i></button>
+                <button class="btn p-0 textOrange border-0"><i class="fa fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Mohamed Essa</p>
+              </td>
+              <td>
+                <p>Primary</p>
+              </td>
+              <td>
+                <p>Admin</p>
+              </td>
+              <td>
+                <p>0</p>
+              </td>
+              <td>
+                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-user-cog"></i></button>
+                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-pencil-alt"></i></button>
+                <button class="btn p-0 textOrange border-0"><i class="fa fa-trash-alt"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
   </main>
