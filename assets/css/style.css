@@ -1005,7 +1005,7 @@ h6 {
 .formGeneral .form-label{
   font-size: 14px;
   font-weight: bold;
-  color: #111111;
+  font-family: "Satoshi-Bold";
   opacity: 1;
 }
 .formGeneral .input-group .input-group-text{
