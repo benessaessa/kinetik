@@ -121,6 +121,17 @@
        font-display: swap;
        font-style: italic;
 }
+.btn-primary{
+  background-color: #ED702D !important;
+  color: #fff !important;
+  height: 50px;
+  border-color: #ED702D !important;
+  border-radius: 4px;
+}
+.btn-primary:hover{
+  background-color: #cf6328 !important;
+  color: #fff !important;
+}
 .font-12{
   font-size: 12px;
 }
@@ -145,8 +156,7 @@
 .tableEmployee{
   border-color: #fde0e1;
   border-width: 2px;
-  border-top-left-radius:16px;
-  border-top-right-radius:16px;
+  border-radius:16px;
 }
 .tableEmployee .table{
   border: 1px solid #fde0e1;
@@ -167,6 +177,12 @@
 .tableEmployee thead th:last-child{
   border-radius: 0px 16px 0px 0px;
 }
+.tableEmployee tbody tr:last-child td:first-child{
+  border-radius: 0px 0px 0px 16px;
+}
+.tableEmployee tbody tr:last-child td:last-child{
+  border-radius: 0px 0px 16px 0px;
+}
 .tableEmployee tbody td{
   background-color: white;
   padding: 1rem;
@@ -176,15 +192,11 @@
   color: #292929;
   font-family: "Satoshi-Medium";
 }
-.btnOrange{
-  background-color: #ED702D;
-  color: #fff;
-  height: 50px;
-  border-radius: 4px;
+.tablecelMinWidth{
+  min-width: 6rem;
 }
-.btnOrange:hover{
-  background-color: #cf6328;
-  color: #fff;
+.tablecelWidth{
+  min-width: 8rem;
 }
 :root {
   scroll-behavior: smooth;
@@ -981,6 +993,9 @@ h6 {
 }
 .textGray{
   color: #767676;
+}
+.bgGray{
+  background: rgba(61, 213, 152, 0.1);
 }
 .formGeneral .form-control{
   border: 1px solid #767676;

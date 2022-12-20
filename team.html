@@ -225,11 +225,11 @@
 
     <div class="pagetitle">
       <div class="d-md-flex justify-content-between">
-        <div>
+        <div class="pb-2 pb-md-0">
           <h1 class="text-black">Teams</h1>
           <p class="pt-1 fw-bold textGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
-        <button class="btn btnOrange px-4" data-bs-toggle="modal" data-bs-target="#modalAdd"><img src="assets/images/plus.png" class="me-2" alt=""> New Team</button>
+        <button class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#modalAdd"><img src="assets/images/plus.png" class="me-2" alt=""> New Team</button>
       </div>
 
       <!-- Modal Add -->
@@ -304,7 +304,7 @@
                     </div>
                   </div>
                 </div>
-                <button class="btn btnOrange px-5 mt-4">Submit</button>
+                <button class="btn btn-primary px-5 mt-4">Submit</button>
               </form>
             </div>
           </div>
@@ -314,7 +314,39 @@
     
     </div><!-- End Page Title -->
 
-    <section class="section dashboard">
+    <section class="section dashboard pt-md-0 pt-3">
+      <div class="table-responsive tableEmployee border mb-3">
+        <table class="table table-light mb-0">
+          <thead>
+            <tr>
+              <th>Team Name</th>
+              <th>Type</th>
+              <th>Leader</th>
+              <th>Members</th>
+              <th class="tablecelWidth"></th>
+            </tr>
+          </thead>
+          <tbody>
+             <tr>
+              <td colspan="5">
+                <div class="container">
+                  <div class="row pt-lg-5 pt-3">
+                    <div class="col-lg-6">
+                      <h4 class="pt-5">There is no teams to show !</h4>
+                      <p class="textGray opacity-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+                      <button class="btn btn-primary px-4 my-3" data-bs-toggle="modal" data-bs-target="#modalAdd"><img src="assets/images/plus.png" class="me-2"> New Team</button>
+                    </div>
+                    <div class="col-lg-6">
+                      <img src="assets/images/admin.png" class="img-fluid d-none d-lg-block" alt="">
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
       <div class="table-responsive tableEmployee border">
         <table class="table table-light mb-0">
           <thead>
@@ -323,7 +355,7 @@
               <th>Type</th>
               <th>Leader</th>
               <th>Members</th>
-              <th></th>
+              <th class="tablecelWidth"></th>
             </tr>
           </thead>
           <tbody>
@@ -384,6 +416,7 @@
                 <button class="btn p-0 textOrange border-0"><i class="fa fa-trash-alt"></i></button>
               </td>
             </tr>
+           
           </tbody>
         </table>
       </div>

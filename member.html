@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard</title>
+  <title>Members</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <link rel="icon" href="assets/images/logo.png">
@@ -186,8 +186,8 @@
     <ul class="sidebar-nav second-sidebar-nav pt-md-2" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link active" href="organization.html">
-          <img src="assets/images/organizationActive.svg" class="mb-2" alt="">
+        <a class="nav-link" href="organization.html">
+          <img src="assets/images/organization.svg" class="mb-2" alt="">
           <span>Organization</span>
         </a>
       </li>
@@ -198,8 +198,8 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="team.html">
-          <img src="assets/images/team.svg" alt="">
+        <a class="nav-link active" href="team.html">
+          <img src="assets/images/teamActive.svg" alt="">
           <span>Teams</span>
         </a>
       </li>
@@ -224,37 +224,105 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1 class="text-black">Organization</h1>
-      <p class="py-3 fw-bold textGray">This is your company page.  This is a feed of the most important things you need to know.  Look out for new job vacancies, HR updates, All company announcements.  Also this is where you can link quickly to your dedicated HR platform too</p>
-      <div class="card rounded-3">
-        <div class="card-body pt-3">
-          <h1><span class="textOrange">K</span>inetik <i class="fa fa-edit textOrange"></i></h1>
-          <form class="formGeneral" action="#">
-            <div class="mb-3 mt-3">
-              <label for="organization" class="form-label fw-bold textBlack">Organization Name</label>
-              <input type="text" required class="form-control height-42" id="organization" placeholder="Ex :Kinetik" name="organization">
+      <div class="d-md-flex justify-content-between">
+        <div class="pb-2 pb-md-0">
+          <h1 class="text-black">Members List</h1>
+          <p class="pt-1 fw-bold textGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <button class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#modalAdd"><img src="assets/images/plus.png" class="me-2" alt=""> Add Member</button>
+      </div>
+
+      <!-- Modal Add -->
+      <div class="modal fade" id="modalAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header pb-0 border-0 pt-4 ps-4">
+              <div class="w-100">
+                <h5> Add Team Members <button type="button" class="btn-close float-end display-6" data-bs-dismiss="modal" aria-label="Close"></button></h5>
+                <p class="textGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
             </div>
-            <div class="mb-3 mt-3">
-              <label for="mission" class="form-label fw-bold textBlack">Organization Mission</label>
-              <textarea type="text" rows="4" required class="form-control" id="mission" placeholder="Ex :Kinetik" name="mission"></textarea>
+            <div class="modal-body pt-0 px-4">
+              <form class="formGeneral" action="team.html">
+                <div class="mb-2">
+                  <label for="leader" class="form-label fw-bold textBlack">Choose Members</label>
+                  <select class="form-select form-control height-42" id="leader" aria-label="Default select example">
+                    <option selected>Select</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <button class="btn btn-primary px-5 mt-4 height-42">Add</button>
+              </form>
             </div>
-            <div class="mb-3 mt-3">
-              <label for="vision" class="form-label fw-bold textBlack">Organization Vision</label>
-              <textarea type="text" rows="4" required class="form-control" id="vision" placeholder="Ex :Kinetik" name="vision"></textarea>
-            </div>
-            <div class="mb-3 mt-3">
-              <label for="values" class="form-label fw-bold textBlack">Organization Values</label>
-              <textarea type="text" rows="4" required class="form-control" id="values" placeholder="Ex :Kinetik" name="values"></textarea>
-            </div>
-            <button class="btn btn-primary px-5 mt-2">Submit</button>
-          </form>
+          </div>
         </div>
       </div>
+      <!-- End modal Add -->
     
     </div><!-- End Page Title -->
 
-    <section class="section dashboard">
-      
+    <section class="section dashboard pt-3 pt-md-0">
+      <div class="table-responsive tableEmployee border mb-3">
+        <table class="table table-light mb-0">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>State</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+             <tr>
+              <td colspan="4">
+                <div class="container">
+                  <div class="row pt-lg-5 pt-3">
+                    <div class="col-lg-6">
+                      <h4 class="pt-5">There is no Members to show !</h4>
+                      <p class="textGray opacity-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+                      <button class="btn btn-primary px-4 my-3" data-bs-toggle="modal" data-bs-target="#modalAdd"><img src="assets/images/plus.png" class="me-2"> Add Member</button>
+                    </div>
+                    <div class="col-lg-6">
+                      <img src="assets/images/admin.png" class="img-fluid d-none d-lg-block" alt="">
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+      <div class="table-responsive tableEmployee border">
+        <table class="table table-light mb-0">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>State</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>Mohamed Essa</p>
+              </td>
+              <td>
+                <p>essa@pencil-designs.com</p>
+              </td>
+              <td>
+                <p><span class="badge bgGray rounded-5 text-success px-4 py-2">Accepted</span></p>
+              </td>
+              <td>
+                <button class="btn p-0 textOrange border-0"><i class="fa fa-trash-alt"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
   </main>
