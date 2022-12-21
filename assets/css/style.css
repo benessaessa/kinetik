@@ -141,12 +141,6 @@
 .font-16{
   font-size: 16px;
 }
-.height-42{
-  height: 42px;
-}
-.height-50{
-  height: 50px;
-}
 .textOrange{
   color: #ED702D !important;
 }
@@ -1000,6 +994,7 @@ h6 {
 .formGeneral .form-control{
   border: 1px solid #767676;
   font-size: 14px;
+  min-height: 42px;
   color: #111111;
 }
 .formGeneral .form-label{
