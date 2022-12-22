@@ -8,7 +8,7 @@
   <title>Teams</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-  <link rel="icon" href="assets/images/logo.png">
+  <link rel="icon" href="assets/images/logo.svg">
   <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -23,13 +23,10 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span>
-          <img src="assets/images/logo.png">
-        </span>
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.svg" class="ms-2 ms-lg-3">
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
+      <i class="fa fa-bars text-dark toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
     <nav class="header-nav ms-auto">
@@ -44,7 +41,7 @@
         <li class="nav-item dropdown">
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
+            <i class="fa fa-bell"></i>
             <!-- <span class="badge bg-primary badge-number">4</span> -->
           </a><!-- End Notification Icon -->
 
@@ -115,11 +112,11 @@
           </ul><!-- End Notification Dropdown Items -->
 
         </li><!-- End Notification Nav -->
-        <li class="nav-item dropdown pe-3">
+        <li class="nav-item dropdown pe-lg-4 pe-3">
 
-          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0 pe-lg-2" href="#" data-bs-toggle="dropdown">
+            <span class="d-none d-md-block pe-2">K. Anderson</span>
             <img src="assets/images/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
@@ -180,7 +177,7 @@
 
     <!-- arrow for side menu -->
     <!-- <div onclick="changeIcon(this)" class="d-none d-xl-block">
-      <i class="fa fa-arrow-alt-circle-left textOrange toggle-sidebar-btn2 absoluteBtn fa-lg" ></i>
+      <i class="fa fa-arrow-alt-circle-left text-primary toggle-sidebar-btn2 absoluteBtn fa-lg" ></i>
     </div> -->
 
     <ul class="sidebar-nav  pt-md-2" id="sidebar-nav">
@@ -227,7 +224,7 @@
       <div class="d-md-flex justify-content-between">
         <div class="pb-2 pb-md-0">
           <h1 class="text-black">Teams</h1>
-          <p class="pt-1 fw-bold textGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p class="pt-1 fw-bold text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <button class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#modalAdd"><img src="assets/images/plus.png" class="me-2" alt=""> New Team</button>
       </div>
@@ -239,11 +236,11 @@
             <div class="modal-header pb-0 border-0 pt-4 ps-4">
               <div class="w-100">
                 <h5> New Team <button type="button" class="btn-close float-end display-6" data-bs-dismiss="modal" aria-label="Close"></button></h5>
-                <p class="textGray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </div>
             </div>
             <div class="modal-body pt-0 px-4">
-              <form class="formGeneral" action="team.html">
+              <form class="form" action="team.html">
                 <div class="row pt-3">
                   <div class="col-lg-6">
                     <div class="mb-2">
@@ -315,7 +312,7 @@
     </div><!-- End Page Title -->
 
     <section class="section dashboard pt-md-0 pt-3">
-      <div class="table-responsive tableEmployee border mb-3">
+      <div class="table-responsive mb-3">
         <table class="table table-light mb-0">
           <thead>
             <tr>
@@ -328,12 +325,12 @@
           </thead>
           <tbody>
              <tr>
-              <td colspan="5">
+              <td colspan="5" class="border-0">
                 <div class="container">
                   <div class="row pt-lg-5 pt-3">
                     <div class="col-lg-6">
                       <h4 class="pt-5">There is no teams to show !</h4>
-                      <p class="textGray opacity-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+                      <p class="text-secondary opacity-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
                       <button class="btn btn-primary px-4 my-3" data-bs-toggle="modal" data-bs-target="#modalAdd"><img src="assets/images/plus.png" class="me-2"> New Team</button>
                     </div>
                     <div class="col-lg-6">
@@ -347,14 +344,14 @@
           </tbody>
         </table>
       </div>
-      <div class="table-responsive tableEmployee border">
+      <div class="table-responsive">
         <table class="table table-light mb-0">
           <thead>
             <tr>
               <th>Team Name</th>
               <th>Type</th>
               <th>Leader</th>
-              <th>Members</th>
+              <th class="text-center">Members</th>
               <th class="tablecelWidth"></th>
             </tr>
           </thead>
@@ -369,13 +366,13 @@
               <td>
                 <p>Admin</p>
               </td>
-              <td>
+              <td class="text-center">
                 <p>0</p>
               </td>
-              <td>
-                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-user-cog"></i></button>
-                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-pencil-alt"></i></button>
-                <button class="btn p-0 textOrange border-0"><i class="fa fa-trash-alt"></i></button>
+              <td class="text-center table-icons">
+                <a href="member.html" class="btn p-0 border-0 me-3"><img src="assets/images/user-plus.svg" alt=""></a>
+                <button class="btn p-0 border-0 me-3"><img src="assets/images/pen.svg" alt=""></button>
+                <button class="btn p-0 border-0"><img src="assets/images/trash.svg" alt=""></button>
               </td>
             </tr>
             <tr>
@@ -388,13 +385,13 @@
               <td>
                 <p>Admin</p>
               </td>
-              <td>
-                <p>0</p>
+              <td class="text-center">
+                <p>1</p>
               </td>
-              <td>
-                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-user-cog"></i></button>
-                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-pencil-alt"></i></button>
-                <button class="btn p-0 textOrange border-0"><i class="fa fa-trash-alt"></i></button>
+              <td class="text-center table-icons">
+                <a href="member.html" class="btn p-0 border-0 me-3"><img src="assets/images/user-plus.svg" alt=""></a>
+                <button class="btn p-0 border-0 me-3"><img src="assets/images/pen.svg" alt=""></button>
+                <button class="btn p-0 border-0"><img src="assets/images/trash.svg" alt=""></button>
               </td>
             </tr>
             <tr>
@@ -407,13 +404,13 @@
               <td>
                 <p>Admin</p>
               </td>
-              <td>
-                <p>0</p>
+              <td class="text-center">
+                <p>2</p>
               </td>
-              <td>
-                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-user-cog"></i></button>
-                <button class="btn p-0 textOrange border-0 me-3"><i class="fa fa-pencil-alt"></i></button>
-                <button class="btn p-0 textOrange border-0"><i class="fa fa-trash-alt"></i></button>
+              <td class="text-center table-icons">
+                <a href="member.html" class="btn p-0 border-0 me-3"><img src="assets/images/user-plus.svg" alt=""></a>
+                <button class="btn p-0 border-0 me-3"><img src="assets/images/pen.svg" alt=""></button>
+                <button class="btn p-0 border-0"><img src="assets/images/trash.svg" alt=""></button>
               </td>
             </tr>
            
@@ -425,13 +422,8 @@
   </main>
   <!-- End #main -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
   <!-- JS Files -->
-  <script
-  src="https://code.jquery.com/jquery-3.6.2.slim.js"
-  integrity="sha256-OflJKW8Z8amEUuCaflBZJ4GOg4+JnNh9JdVfoV+6biw="
-  crossorigin="anonymous"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
