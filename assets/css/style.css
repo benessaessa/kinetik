@@ -144,8 +144,15 @@
 .text-primary{
   color: #ED702D !important;
 }
-.textBlak{
-  color: #111111;
+.table .badge{
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+}
+.badge-accept{
+  background: rgba(61, 213, 152, 0.1);
+  color: #3DD598;
+  font-family: "Satoshi-Light";
 }
 .table-responsive{
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
