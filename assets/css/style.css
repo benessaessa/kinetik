@@ -187,6 +187,9 @@
 .table-responsive tbody tr:last-child td:last-child{
   border-radius: 0px 0px 16px 0px;
 }
+.table-responsive tbody tr:last-child td{
+  border: none;
+}
 .table-responsive tbody td{
   background-color: white;
   padding: 1rem;
