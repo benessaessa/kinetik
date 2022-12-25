@@ -144,6 +144,9 @@
 .text-primary{
   color: #ED702D !important;
 }
+.text-black{
+  color: #000 !important;
+}
 .table .badge{
   font-size: 14px;
   width: 100px;
@@ -196,6 +199,9 @@
   width: 20px;
   height: 20px;
 }
+.table-responsive .table tbody tr .table-icons{
+  min-width: 9rem;
+}
 .tablecelMinWidth{
   min-width: 6rem;
 }
@@ -230,7 +236,10 @@ h5,
 h6 {
   font-family: 'Satoshi-Medium';
 }
-
+.fw-semibold{
+  font-weight: 100 !important;
+  font-family: 'Satoshi-Regular';
+}
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
@@ -320,7 +329,6 @@ h6 {
   font-size: 18px;
   font-weight: 500;
   color: #012970;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .card-title span {
@@ -332,16 +340,12 @@ h6 {
 .card-body {
   padding: 0 20px 20px 20px;
 }
-
+/* .card-body p{
+  font-family:'Satoshi-Medium';
+  font-weight: 200;
+} */
 .card-img-overlay {
   background-color: rgba(255, 255, 255, 0.6);
-}
-
-/* Alerts */
-.alert-heading {
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
 }
 
 /* Close Button */
