@@ -176,6 +176,7 @@
 }
 .table-responsive thead th:first-child{
   border-radius: 16px 0px 0px 0px;
+  min-width: 8rem;
 }
 .table-responsive thead th:last-child{
   border-radius: 0px 16px 0px 0px;
